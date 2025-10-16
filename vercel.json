@@ -1,0 +1,25 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "*/30 * * * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/cron",
+      "destination": "/api/cron"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/cron",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ]
+}
